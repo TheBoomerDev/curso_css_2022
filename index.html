@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* etiqueta  //*/
+        h6{
+            color: rgb(255, 37, 170, 255); /* RGBA - 0-255 //*/
+            color: rgb(255, 37, 170);/* RGB - 0-255 //*/
+            color: #FF22AAFF;/* RGBA - 0-255//*/
+            color: #FF22AA;/* RGB - 0-255//*/
+            color: #F2A;/* RGB - 0-128 //*/
+        }
+        /* clase  //*/
+        .titulo{
+            background-color: #BEAFEA;
+            color: #caca;
+        }
+        /* ID  //*/
+        #gran_titulo{
+            background-color: #AACC22;
+        }
+
+        li#item_01.item_01{
+            color:pink;
+        }
+
+        div.hola_mundo{
+            position: absolute;
+            left: 30%;
+        }
+
+        @media screen and (max-width: 500px) {
+            div.hola_mundo{
+                background-color: maroon;
+            position: absolute;
+            left: 30%;
+        }
+        }
+
+        @media screen and (min-width: 568px) {
+            div.hola_mundo{
+                background-color:pink;
+            position: absolute;
+            left: 35%;
+        }
+        }
+
+        @media screen and (min-width: 768px) {
+            div.hola_mundo{
+                background-color: blue;
+            position: absolute;
+            left: 45%;
+        }
+        }
+
+        @media screen and (min-width: 1024px) {
+            div.hola_mundo{
+                background-color: yellow;
+            position: absolute;
+            left: 40%;
+        }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<h1>Titulo 1</h1>
+<h2>Titulo 2</h2>
+<h3>Titulo 3</h3>
+<h4 id="gran_titulo">Titulo 4</h4>
+<h5>Titulo 5</h5>
+<h6>Titulo 6</h6><h6 class="titulo">Titulo 6</h6>
+<h6>Titulo 6</h6>
+<h6>Titulo 6</h6>
+<div class="hola_mundo">
+    Hola Mundo <span>Bienvenidos al CSS</span>
+    <p class="titulo">Pararrafor de TExto</p>
+    <p>Pararrafor de TExto</p>
+</div>
+
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+
+</body>
+</html>
