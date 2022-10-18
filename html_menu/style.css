@@ -1,0 +1,181 @@
+@import url('http://fonts.cdnfonts.com/css/hustler');
+
+body{
+  background-color: #FFFEFB;
+}
+
+.menu{
+  height: 90vh;
+  transition: height 2s;
+
+}
+
+.header{
+  padding-bottom: 0rem;
+  padding-right: 0rem;
+  padding-left: 0rem;
+}
+
+header.columns{
+  z-index: 1;
+  padding-left: 0rem;
+  margin-left: 0.5rem;
+  padding-right: 0rem;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+nav.navbar{
+  background-color: #EBE4D5;
+
+  border-radius: 16px;
+background: #EBE4D5;
+box-shadow:  14px 14px 23px #cfc9bb,
+             -14px -14px 23px #ffffef;
+}
+
+a#principal {
+  margin-left: 1rem;
+  font-family: 'Hustler', sans-serif;
+  font-display: swap;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #858F92;
+  text-shadow: 10px 8px 12px #a49f94 ;
+}
+
+h2.menu_header{
+  margin-top: 0.5rem;
+}
+
+h2.menu_header::first-letter{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-shadow: -0.25rem 0.25rem 1rem #3D5055;
+  text-transform: uppercase;
+  font-family: 'Hustler', sans-serif;
+}
+
+.categorias{
+  height: 25vh;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.categoria::first-letter{
+  font-weight: bold;
+  font-family: 'Hustler', sans-serif;
+  text-transform: uppercase;
+}
+.categoria{
+  font-weight: 600;
+  text-align: center;
+  max-width: 10rem;
+  padding:0.25rem;
+  padding-left: .5rem;
+  border-radius: 41px;
+  background: #EBE4D5;
+  box-shadow:  18px 18px 36px #cfc9bb,
+              -18px -18px 36px #ffffef;
+}
+
+button{
+  font-family: Arial, sans-serif;
+}
+
+button.is-ghost.rrss{
+  color: #858F92;
+}
+
+button.is-ghost.rrss:hover{
+  color: #3D5055;
+  text-decoration: none;
+}
+
+button.is-ghost.menu_header{
+  color: #1D373E;
+  font-weight:600;
+}
+
+button.is-ghost.menu_header:hover{
+  color: #1D373E;
+  font-weight:600;
+  font-size: 1.05rem;
+}
+
+div#contenido.contenido{
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 0.9rem;
+  grid-template-rows:repeat( auto-fit, minmax(5rem, 1fr) );
+  margin-top:1.5rem;
+}
+
+a.image_back{
+  background-image: url("https://picsum.photos/265/260");
+  background-size: contain;
+  background-repeat:  no-repeat;
+}
+
+div.card_container{
+  position: relative;
+}
+
+.card{
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 0 2px 2px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.11), 0 6px 8px rgba(0,0,0,0.11), 0 8px 16px rgba(0,0,0,0.11);
+}
+
+header.card_title > *{
+  position: absolute;
+  top: 0.5rem;
+  color: #FFFCFB ;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem #1D373E);
+  font-family: 'Hustler', sans-serif;
+  font-display: swap;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+footer.card_footer{
+  position: absolute;
+  bottom: 1rem;
+  left: .5rem;
+  font-family: Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 1.1rem;
+  color:#D5D7D8;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem #1D373E);
+}
+
+div.card-image{
+  width: 100%;
+  height: 100%;
+}
+
+figure.card_image{
+  width: 100%;
+  height: 100%;
+
+}
+
+figure > img{
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .categorias{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .categoria{
+    width: 5rem;
+    margin: 0rem;
+    padding: 0rem;
+  }
+
+}

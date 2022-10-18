@@ -15,6 +15,9 @@
             color: #FF22AA;/* RGB - 0-255//*/
             color: #F2A;/* RGB - 0-128 //*/
         }
+        span{
+            font-weight: bolder;
+        }
         /* clase  //*/
         .titulo{
             background-color: #BEAFEA;
@@ -30,14 +33,14 @@
         }
 
         div.hola_mundo{
-            position: absolute;
+
             left: 30%;
         }
 
         @media screen and (max-width: 500px) {
             div.hola_mundo{
                 background-color: maroon;
-            position: absolute;
+
             left: 30%;
         }
         }
@@ -45,7 +48,7 @@
         @media screen and (min-width: 568px) {
             div.hola_mundo{
                 background-color:pink;
-            position: absolute;
+
             left: 35%;
         }
         }
@@ -53,7 +56,7 @@
         @media screen and (min-width: 768px) {
             div.hola_mundo{
                 background-color: blue;
-            position: absolute;
+
             left: 45%;
         }
         }
@@ -61,12 +64,44 @@
         @media screen and (min-width: 1024px) {
             div.hola_mundo{
                 background-color: yellow;
-            position: absolute;
+
             left: 40%;
         }
         }
 
 
+        .cuadrado{
+            width: 25px;
+            height: 25px;
+            background-color: #BEBABB;
+        }
+
+        .cuadrado_rem{
+            width: 2rem;
+            height: 2rem;
+            background-color: #666BBB;
+            margin: 1.2rem;
+            padding: 1.2rem;
+        }
+
+        .cuadrado_per{
+            left: 1rem;
+            width: 2vw;
+            height: 2vh;
+            background-color: #BBB654;
+        }
+
+        div.row{
+            width: 250px;
+        }
+
+        button{
+            padding: 2rem;
+            padding-left: 3rem;
+            padding-top: 1.75rem;
+            padding-right: 5rem;
+            margin: 0.25rem;
+        }
 
     </style>
 
@@ -80,6 +115,15 @@
 <h6>Titulo 6</h6><h6 class="titulo">Titulo 6</h6>
 <h6>Titulo 6</h6>
 <h6>Titulo 6</h6>
+
+<div class="row">
+    <div class="cuadrado"></div>
+<div class="cuadrado_rem"></div>
+<div class="cuadrado_per"></div>
+</div>
+
+<button> Hola, Soy un Botón</button>
+
 <div class="hola_mundo">
     Hola Mundo <span>Bienvenidos al CSS</span>
     <p class="titulo">Pararrafor de TExto</p>
@@ -110,6 +154,202 @@
         <li class="item">Item 04</li>
     </ul>
 </div>
+
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_01" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_01">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_02" class="listado">
+    <ul class="lista_01 lista">
+        <li  id="item_01" class="item item_11">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+<div id="div_03" class="listado">
+    <ul class="lista_01 lista">
+        <li id="item_01" class="item item_21">Item 01 </li>
+        <li class="item">Item 02</li>
+        <li class="item">Item 03</li>
+        <li class="item">Item 04</li>
+    </ul>
+</div>
+
 
 </body>
 </html>
