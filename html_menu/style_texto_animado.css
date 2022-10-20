@@ -1,0 +1,76 @@
+div.columns.texto_animado{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #FFFCFB;
+}
+
+button.texto_animado{
+    color: #111;
+    font-size: 1.2em;
+    font-family: helvetica;
+    padding: 1.5rem;
+    border-color: lightblue;
+    border-radius: 1.75rem;
+    background-color: blue;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+button.texto_animado > span.parapadeo{
+    display:table-cell;
+    margin:0px;
+    padding:0px;
+    animation:  textAnim 3s linear infinite;
+}
+
+button.texto_animado > span.noparpadeo{
+    display:table-cell;
+    margin:0px;
+    padding:0px;
+    animation:  textAnim 3s linear 1;
+    color: #fff;
+    text-shadow: 0 0  10px #f4bf04,
+					0 0  20px #f4bf04,
+					0 0  40px #f4bf04,
+					0 0  80px #f4bf04,
+					0 0  120px #f4bf04,
+					0 0  200px #f4bf04,
+					0 0  300px #f4bf04,
+					0 0  400px #f4bf04;
+}
+
+button.prueba_shadow{
+    font-size: 4rem;
+    text-shadow:
+    1rem 2rem 2rem blue,
+    1rem 3rem 3rem pink,
+    1rem 4rem 4rem green,
+    1rem 5rem 5rem yellow,
+    1rem 6rem 6rem red,
+    1rem 7rem 7rem black,
+    1rem 8rem 8rem grey,
+    1rem 9rem 9rem #f4bf04;
+}
+
+@keyframes textAnim {
+    0%, 100%{
+		color: #fff;
+		filter: blur(2px);
+		text-shadow: 0 0  10px #f4bf04,
+					0 0  20px #f4bf04,
+					0 0  40px #f4bf04,
+					0 0  80px #f4bf04,
+					0 0  120px #f4bf04,
+					0 0  200px #f4bf04,
+					0 0  300px #f4bf04,
+					0 0  400px #f4bf04;
+	}
+	5%, 95%{
+		color: #111;
+		filter: blur(0px);
+		text-shadow: none;
+	}
+}

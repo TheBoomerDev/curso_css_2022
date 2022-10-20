@@ -1,0 +1,50 @@
+.ejemplo_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+form.box{
+    background-color: #000;
+}
+
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: helvetica;
+    font-size: 3rem;
+}
+
+.box input[type="email"], .box input[type="password"]{
+    border:0;
+}
+
+.box input:is( [type="email"], [type="password"] ){
+    background: none;
+    display: block;
+    margin: 2rem auto;
+    border: 0.15rem solid #3498db;
+    padding: 1rem 0.75rem;
+    width: 15rem;
+    outline: none;
+    color: white;
+    border-radius: 1.5rem;
+    transition: border-color .5s;
+    transition: width 1s;
+    transition: transform .5s;
+}
+
+.box input:is( [type="email"], [type="password"] ):hover{
+    width: 17rem;
+    border-color: #f4bf04;
+}
+
+.box input:is( [type="email"], [type="password"] ):focus::placeholder{
+    color:white;
+    transform: translate(10%, -55%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    overflow: visible;
+    z-index: 999;
+}
