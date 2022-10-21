@@ -28,6 +28,10 @@
   grid-area: 2 / 3 / 3 / 4;
 }
 
+.lista_de_bodas > a{
+  margin:0.5rem;
+}
+
 .lista_de_bodas > div.texto {
   display: flex;
   flex-direction: column;
@@ -50,6 +54,7 @@ p.texto_label{
 div.imagen > img {
   width: 30rem;
   height: 25rem;
+
 }
 
 header.card-header.card_title.option_content > p {
@@ -60,6 +65,7 @@ header.card-header.card_title.option_content > p {
 }
 
 figure.image.card_image.option_content > img {
+  padding:0.1rem;
   filter: blur(3px);
 }
 
