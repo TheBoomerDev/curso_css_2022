@@ -1,0 +1,73 @@
+.lista_de_bodas {
+  height: 25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6fr 4fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 10rem;
+
+  margin-bottom: 15rem;
+}
+
+.lista_de_bodas > div.texto {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.lista_de_bodas > div.imagen {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.lista_de_bodas > a.boda_01 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.lista_de_bodas > div.boda_02 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.lista_de_bodas > div.boda_03 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.lista_de_bodas > div.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+h3.label {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Hustler", sans-serif;
+  text-shadow: -0.25rem 0.25rem 1rem #ebe4d5;
+  color: #3d5055;
+}
+
+p.texto_label{
+  max-width: 40rem;
+}
+
+div.imagen > img {
+  width: 30rem;
+  height: 25rem;
+}
+
+header.card-header.card_title.option_content > p {
+  font-size: 3rem;
+  font-weight: lighter;
+  text-shadow: -0.25rem 0.25rem 1rem #3d5055;
+  color: #ebe4d5;
+}
+
+figure.image.card_image.option_content > img {
+  filter: blur(3px);
+}
+
+figure.image.card_image.option_content > img:hover {
+  filter: blur(1px);
+}
+
+a.card.seccion.card_container.option_content:hover > * {
+  text-shadow: -0.25rem 0.25rem 1rem #b69894;
+  color: #ebd8d5;
+}
