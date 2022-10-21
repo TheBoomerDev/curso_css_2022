@@ -16,78 +16,80 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./style_debug.css" />
     <link rel="stylesheet" href="./style_texto_animado.css" />
     <link rel="stylesheet" href="./style_input_box.css" />
+    <link rel="stylesheet" href="./style_footer.css">
   </head>
   <body>
     <header class="columns">
-      <div id="header" class="column is-12 animate__animated animate__slideInDown header ">
-
-
+      <div
+        id="header"
+        class="column is-12 animate__animated animate__slideInDown header"
+      >
         <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <a id="principal" class="navbar-item" href="https://bulma.io">
+          <div class="navbar-brand">
+            <a id="principal" class="navbar-item" href="https://bulma.io">
+              De Largo
+            </a>
 
-                De Largo
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navbarBasicExample"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
 
-              </a>
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start"></div>
 
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <button class="button is-ghost menu_header">Home</button>
 
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
+                <button class="button is-ghost menu_header">Blog</button>
 
-              </div>
+                <button class="button is-ghost menu_header">Contact</button>
 
-              <div class="navbar-end">
-                <div class="navbar-item">
+                <button class="button is-ghost rrss">
+                  <i class="fab fa-facebook"></i>
+                </button>
 
-                    <button class="button is-ghost menu_header">Home</button>
+                <button class="button is-ghost rrss">
+                  <i class="fab fa-pinterest"></i>
+                </button>
 
-                    <button class="button is-ghost menu_header">Blog</button>
-
-                    <button class="button is-ghost menu_header">Contact</button>
-
-
-                    <button class="button is-ghost rrss">
-                        <i class="fab fa-facebook"></i>
-                    </button>
-
-                    <button class="button is-ghost rrss">
-                        <i class="fab fa-pinterest"></i>
-                    </button>
-
-                    <button class="button is-ghost rrss">
-                        <i class="fab fa-twitter"></i>
-                    </button>
-
-
-
-                </div>
+                <button class="button is-ghost rrss">
+                  <i class="fab fa-twitter"></i>
+                </button>
               </div>
             </div>
-          </nav>
-
-    </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <div class="columns">
-      <div id="menu" name="menu" class="animate__animated animate__fadeInLeft pl1 menu column is-2">
+      <div
+        id="menu"
+        name="menu"
+        class="animate__animated animate__fadeInLeft pl1 menu column is-2"
+      >
+        <h2 class="menu_header">Menu Principal</h2>
 
-        <h2 class="menu_header">
-          Menu Principal
-        </h2>
-
-        <hr>
+        <hr />
 
         <div class="categorias">
           <a href="#" class="categoria">Vestidos</a>
@@ -96,226 +98,213 @@
           <a href="#" class="categoria">Recuerdos</a>
           <a href="#" class="categoria">Detalles</a>
         </div>
-
-
-
       </div>
 
-      <div id="contenido" class="animate__animated animate__zoomInUp contenido column is-8">
-
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
+      <div
+        id="contenido"
+        class="animate__animated animate__zoomInUp contenido column is-8"
+      >
+        <div
+          href="#"
+          class="card seccion card_container mouse"
+          (click)="()=>{}"
+        >
+          <div class="card-image">
             <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
               <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
             </figure>
-
           </div>
           <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
+            <p class="card-header-title">Card header</p>
           </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </div>
 
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
 
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
 
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
-
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
-
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
-
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
-
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
-
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
 
         <a href="#" class="card seccion card_container">
-          <div class="card-image ">
+          <div class="card-image">
             <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
               <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
             </figure>
-
           </div>
           <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
+            <p class="card-header-title">Card header</p>
           </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
-
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
-        </a>
-
-        <a href="#" class="card seccion card_container">
-          <div class="card-image ">
-            <figure class="image is-4by3 card_image">
-              <img src="https://images8.alphacoders.com/484/484717.jpg" alt="Placeholder image">
-              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-            </figure>
-
-          </div>
-          <header class="card-header card_title">
-            <p class="card-header-title">
-              Card header
-            </p>
-          </header>
-          <footer class="card_footer">
-            Descripcion de Seccion
-          </footer>
+          <footer class="card_footer">Descripcion de Seccion</footer>
         </a>
 
 
+
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
+
+        <a href="#" class="card seccion card_container">
+          <div class="card-image">
+            <figure class="image is-4by3 card_image">
+              <img
+                src="https://images8.alphacoders.com/484/484717.jpg"
+                alt="Placeholder image"
+              />
+              <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+            </figure>
+          </div>
+          <header class="card-header card_title">
+            <p class="card-header-title">Card header</p>
+          </header>
+          <footer class="card_footer">Descripcion de Seccion</footer>
+        </a>
       </div>
 
-      <div id="menu" name="menu" class="animate__animated animate__fadeInRight menu menu_right column is-2">
-
+      <div
+        id="menu"
+        name="menu"
+        class="animate__animated animate__fadeInRight menu menu_right column is-2"
+      >
         <button type="button" class="texto_animado">
           <span class="parapadeo">N</span>
           <span class="parapadeo">O</span>
@@ -326,9 +315,7 @@
           <span class="parapadeo">D</span>
           <span class="parapadeo">E</span>
           <span class="parapadeo">S</span>
-
         </button>
-
 
         <ul class="menu_right">
           <li><a href="" class="link">Menu 01</a></li>
@@ -342,36 +329,79 @@
           <li><a href="" class="link">Menu 09</a></li>
         </ul>
 
-
         <div class="columns ejemplo_input">
-
           <form action="" class="box">
             <h1 class="login">newsletter</h1>
 
-            <input type="email" name="login" placeholder="Email">
+            <input type="email" name="login" placeholder="Email" />
 
-            <input type="submit" value="Si, Quiero">
-
-
+            <button type="submit" disabled>Si, Quiero</button>
           </form>
-
         </div>
-
       </div>
     </div>
 
     <div class="columns texto_animado">
-
-
-        <button type="button" class="prueba_shadow"> PRUEBA </button>
-
-
+      <button type="button" class="prueba_shadow">PRUEBA</button>
     </div>
 
+    <div class="columns footer">
+      <footer id="footer" class="footer is-12 column">
+        <svg
+          width="100%"
+          height="100%"
+          id="svg"
+          viewBox="0 0 1440 400"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,400 C 0,400 0,80 0,80 C 107.64593301435409,79.12918660287082 215.29186602870817,78.25837320574162 319,78 C 422.70813397129183,77.74162679425838 522.4784688995214,78.09569377990432 615,77 C 707.5215311004786,75.90430622009568 792.7942583732058,73.35885167464114 867,76 C 941.2057416267942,78.64114832535886 1004.3444976076555,86.4688995215311 1098,88 C 1191.6555023923445,89.5311004784689 1315.8277511961724,84.76555023923444 1440,80 C 1440,80 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#ebe4d5"
+            fill-opacity="0.265"
+            class="transition-all duration-300 ease-in-out delay-150 path-0"
+          ></path>
+          <style></style>
+          <path
+            d="M 0,400 C 0,400 0,160 0,160 C 106.30622009569379,164.50717703349284 212.61244019138758,169.01435406698565 299,171 C 385.3875598086124,172.98564593301435 451.8564593301435,172.44976076555022 557,165 C 662.1435406698565,157.55023923444978 805.9617224880384,143.1866028708134 899,146 C 992.0382775119616,148.8133971291866 1034.2966507177034,168.80382775119617 1116,174 C 1197.7033492822966,179.19617224880383 1318.8516746411483,169.5980861244019 1440,160 C 1440,160 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#ebe4d5"
+            fill-opacity="0.4"
+            class="transition-all duration-300 ease-in-out delay-150 path-1"
+          ></path>
+          <style></style>
+          <path
+            d="M 0,400 C 0,400 0,240 0,240 C 74.71770334928232,257.0047846889952 149.43540669856463,274.00956937799043 243,265 C 336.56459330143537,255.99043062200957 448.97607655502384,220.9665071770335 568,211 C 687.0239234449762,201.0334928229665 812.6602870813398,216.1244019138756 907,218 C 1001.3397129186602,219.8755980861244 1064.3827751196172,208.5358851674641 1148,210 C 1231.6172248803828,211.4641148325359 1335.8086124401914,225.73205741626793 1440,240 C 1440,240 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#ebe4d5"
+            fill-opacity="0.53"
+            class="transition-all duration-300 ease-in-out delay-150 path-2"
+          ></path>
+          <style></style>
+          <path
+            d="M 0,400 C 0,400 0,320 0,320 C 118.07655502392345,315.28229665071774 236.1531100478469,310.5645933014354 325,311 C 413.8468899521531,311.4354066985646 473.46411483253587,317.02392344497605 548,328 C 622.5358851674641,338.97607655502395 711.9904306220095,355.33971291866027 826,346 C 940.0095693779905,336.66028708133973 1078.5741626794259,301.6172248803828 1185,293 C 1291.4258373205741,284.3827751196172 1365.712918660287,302.1913875598086 1440,320 C 1440,320 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="#ebe4d5"
+            fill-opacity="1"
+            class="transition-all duration-300 ease-in-out delay-150 path-3"
+          ></path>
+        </svg>
+
+        <div class="footer_data">
+
+          <a href="" class="footer_action">Terminos y Condiciones</a>
+          <a href="" class="footer_action">Politicas de Privacidad</a>
+          <a href="" class="footer_action"> &copy; CopyRight 2022 </a>
+
+        </div>
 
 
-    <div class="columns">
-      <footer id="footer" class="footer is-12 column red">Pie de Pagina</footer>
+      </footer>
     </div>
   </body>
 </html>

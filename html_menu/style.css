@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/hustler');
 
 body{
-  background-color: #FFFEFB;
+  background-image: './mesh-874.png';
 }
 
 .menu{
@@ -166,6 +166,16 @@ footer.card_footer{
   filter: drop-shadow(0.5rem 0.5rem 0.5rem #1D373E);
 }
 
+footer.footer{
+  padding: 0rem;
+  margin:0rem;
+}
+
+div.columns.footer{
+  margin:0rem;
+  padding:0rem;
+}
+
 div.card-image{
   width: 100%;
   height: 100%;
@@ -174,7 +184,6 @@ div.card-image{
 figure.card_image{
   width: 100%;
   height: 100%;
-
 }
 
 figure > img{

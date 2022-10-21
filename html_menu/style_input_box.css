@@ -51,7 +51,7 @@ form.box{
     overflow: visible;
 }
 
-.box input[type="submit"]{
+.box button[type="submit"]{
     background: transparent;
     color:#3498db;
     font-family: 'Hustler', sans-serif;
@@ -60,4 +60,5 @@ form.box{
     font-size: 2rem;
     border: transparent;
     text-shadow: 0 0  10px white;
+    cursor: not-allowed;
 }
