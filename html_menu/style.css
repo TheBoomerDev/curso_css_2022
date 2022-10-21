@@ -47,6 +47,7 @@ a#principal {
 
 h2.menu_header{
   margin-top: 0.5rem;
+  color: #64342C;
 }
 
 h2.menu_header::first-letter{
@@ -96,12 +97,12 @@ button.is-ghost.rrss:hover{
 }
 
 button.is-ghost.menu_header{
-  color: #1D373E;
+  color: #64342C;
   font-weight:600;
 }
 
 button.is-ghost.menu_header:hover{
-  color: #1D373E;
+  color: #3D5055;
   font-weight:600;
   font-size: 1.05rem;
 }
@@ -244,4 +245,20 @@ div.menu_right{
 
 .link::after:hover{
   transform: scaleX(1);
+}
+
+figure.card_image{
+  animation: loading_img 3s 1 linear;
+}
+
+@keyframes loading_img {
+    0%{
+      filter: blur(4px);
+    }
+    50%{
+      filter: blur(2px);
+    }
+    100%{
+      filter: blur(0px);
+    }
 }

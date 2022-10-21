@@ -10,36 +10,21 @@ div.columns.texto_animado{
 
 button.texto_animado{
     color: #111;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: helvetica;
-    padding: 1.5rem;
-    border-color: lightblue;
+    padding: .5rem;
+    border-color: transparent;
     border-radius: 1.75rem;
-    background-color: blue;
+    background-color: transparent;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-bottom: 1rem;
 }
 
 button.texto_animado > span.parapadeo{
     display:table-cell;
     margin:0px;
     padding:0px;
-    animation:  textAnim 3s linear infinite;
-}
-
-button.texto_animado > span.noparpadeo{
-    display:table-cell;
-    margin:0px;
-    padding:0px;
-    animation:  textAnim 3s linear 1;
-    color: #fff;
-    text-shadow: 0 0  10px #f4bf04,
-					0 0  20px #f4bf04,
-					0 0  40px #f4bf04,
-					0 0  80px #f4bf04,
-					0 0  120px #f4bf04,
-					0 0  200px #f4bf04,
-					0 0  300px #f4bf04,
-					0 0  400px #f4bf04;
+    animation:  textAnim 3s ease infinite;
 }
 
 button.prueba_shadow{
@@ -59,14 +44,14 @@ button.prueba_shadow{
     0%, 100%{
 		color: #fff;
 		filter: blur(2px);
-		text-shadow: 0 0  10px #f4bf04,
-					0 0  20px #f4bf04,
-					0 0  40px #f4bf04,
-					0 0  80px #f4bf04,
-					0 0  120px #f4bf04,
-					0 0  200px #f4bf04,
-					0 0  300px #f4bf04,
-					0 0  400px #f4bf04;
+		text-shadow: 0 0  10px #1D373E,
+					0 0  20px #1D373E,
+					0 0  40px #1D373E,
+					0 0  80px #1D373E,
+					0 0  120px #1D373E,
+					0 0  200px #1D373E,
+					0 0  300px #1D373E,
+					0 0  400px #1D373E;
 	}
 	5%, 95%{
 		color: #111;
