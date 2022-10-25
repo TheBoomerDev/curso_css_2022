@@ -1,0 +1,52 @@
+body{
+    padding: 3rem;
+    background-color: #E8E9ED;
+}
+
+section{
+    background-color: #babfd1;
+    height: 75vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#sec_01{
+    background-image: url("./sea-6580562_960_720.jpg");
+}
+
+#sec_02{
+    background-image: url("./ribeira-sacra-1268597_960_720.jpg");
+}
+
+#sec_03{
+    background-image: url("./beach-5429182_960_720.jpg");
+}
+
+#sec_04{
+    background-image: url("./cape-ortegal-117601_960_720.jpg");
+}
+
+#sec_05{
+    background-image: url("./galicia-116548_960_720.jpg");
+}
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+h1.title{
+    color:#607196;
+    background-color: #ffc759;
+    border: 1px solid #607196;
+    padding:0.5rem;
+    border-radius: .75rem;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+}
